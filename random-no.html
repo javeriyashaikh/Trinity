@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random No Game</title>
+</head>
+<body>
+    
+    <h1> Guessing Number Game </h1>
+    <input type="number" id="h1">
+    <br><br>
+    <button onclick="check()">Click</button>
+    <p id="p1"></p>
+</body>
+<script>
+
+    let snumber = Math.floor(Math.random() * 10 +1)
+    function check()
+    {
+        let unumber = document.getElementById("h1").value;
+
+        if( unumber == snumber)
+    {
+        document.getElementById("p1").innerHTML = "You Won!";
+    }
+        else
+    {
+        document.getElementById("p1").innerHTML = "Try Again!";
+    }
+    }
+
+</script>
+</html>

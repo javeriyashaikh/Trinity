@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+    .h1
+    {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        text-align: center;
+        align-content: center;
+    }
+
+    .h1:hover
+    {
+        transform: scaleZ(1.5);
+        transition: 2s;
+        color: red;
+        background-color: aqua;
+        border-radius: 50%;
+
+    }
+
+    .h1:hover
+    {
+        transform: translateY(180px);
+        transition: 2s;
+    }
+
+    .h1.h1:hover
+    {
+        transform: skew(200deg, 300deg);
+    }
+</style>
+
+<body>
+    <div class="h1"> BOX1</div>
+</body>
+</html>

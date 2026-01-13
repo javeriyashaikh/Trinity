@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex2 / grid</title>
+</head>
+
+<style>
+    .itemss
+    {
+        text-align: center;
+        align-content: center;
+        border: 2px solid brown;   
+        background-color: aquamarine;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .parent
+    {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        background-color: lightgray;
+        
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="itemss">Item 1</div>
+        <div class="itemss">Item 2</div>
+        <div class="itemss">Item 3</div>
+        <div class="itemss">Item 4</div>
+        <div class="itemss">Item 5</div>
+        <div class="itemss">Item 6</div>
+        <div class="itemss">Item 7</div>
+        <div class="itemss">Item 8</div>
+    </div>
+</body>
+</html>

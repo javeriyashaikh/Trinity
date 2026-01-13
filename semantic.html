@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tags</title>
+</head>
+
+<style>
+
+    .head
+    {
+        color: black;
+    }
+
+    .head1
+    {
+        color: red;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    .grid
+    {
+        display: flex;
+        border: 2px solid red;
+        border-radius: 20px;
+        padding: 10px;
+        justify-content: space-evenly;
+        width: 500px;
+        text-decoration: none;
+       
+    }
+
+    .section
+    {
+        text-decoration: none !important;
+        border: 2px solid black;
+        color: seagreen;
+    }
+
+    .h1{
+        color: darkmagenta;
+        font-style: oblique;
+    }
+
+    .foot
+    {
+        border: 5px solid rgb(50, 169, 205);
+        border-radius: 20px;
+        height: 30px;
+        width: 300px;
+        overflow: hidden;
+        text-align: center;
+        align-content: center;
+        padding-bottom: 20px;
+        font-style: italic;
+       position: relative;
+        
+    }
+
+    .text
+    {
+        color: brown;
+        font-size: medium;
+        display: inline-block;
+        white-space: nowrap;
+        animation: move 5s linear infinite;
+        transform: translateX(100%);
+        
+
+    }
+    @keyframes move
+    {
+        from { transform: translateX(100%);}
+        to { transform: translateX(-120%);}
+    }
+
+</style>
+
+<body>
+    
+    <header class="head">
+        <h1 class="head1">Semantic Tags 4.0 Workshop</h1>
+        <p> Guys, welcome to the Day3 of training with Karan Bhat sir, we are here to test our css skills on basic semantic tags!!!</p>
+        <hr>
+    
+
+        <nav>
+        <ul class="grid">
+            <li><a href ="home.html">Home</li>
+            <li><a href ="course.html">Courses</li>
+            <li><a href ="learn.html">Learn</li>
+            <li><a href ="about.html">About us</li>
+        </ul>
+        </nav>
+    </header>
+    
+    <div class="section">
+        <section>
+            <p>This text is under section tag which contains a para.</p>
+            <p>Getting trained with a superbly fantastic trainer is the best part of the training for me.</p> 
+        </section>
+    </div>
+
+    <article>
+       <h1 class="h1">Thoughts</h1>
+       <p class="head">Leveling up day by day, we are not going to stop until we rock!</p> 
+    </article>
+    <hr>
+    <br><br>
+
+    <footer class="foot">
+        <p class="text" >&copy; Finally, 2026 a great start!</p>
+    </footer>
+</body>
+</html>

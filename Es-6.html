@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let fruits = ["apple", "banana","mango","orange", "grape" ];
+    // fruits.push("kiwi");
+    // console.log(fruits);
+    // console.log(fruits [1]);
+    // fruits.pop(fruits[3])
+    // console.log(fruits);
+
+//     for(i=0; i<=5; i++)
+// {
+//     console.log(fruits[i]);
+// }
+
+//  let age = 18;
+
+//  if (age >= 18)
+//  {
+//     console.log ("Able to vote!");
+//  }
+//  else
+//  {
+//     console.log ("Not eligible to vote!");
+//  }
+//  else-if
+
+// const details = {
+//             name:"karan",
+//             Age:27,
+//             City: "Pune" 
+//         }
+//      const{name,...others}= details;
+
+//      console.log(name);
+//      console.log(others); 
+
+// const color = ["red", "blue", "green", "black", "purple"];
+// const[ first, second,...remains]= color;
+// console.log(first);
+// console.log(second);
+// console.log(remains);
+
+// const obj1= {name : "Priya"};
+// const obj2 ={sname : "Patil"};
+// const user = {...obj1,...obj2};
+// console.log(user);
+ 
+//  let name ="KaranBhat";
+//  let age = 27;
+//  let skill = "Trainer";
+//  console.log(`My name is ${name}, I am ${age} years old !, also I am a ${skill}`);
+
+    // let num = 6
+    // var ans = new Promise ((res, rej) => 
+    // {
+    //     if(num<=5)
+    // {
+    //     return res()
+    // }
+    // else
+    // {
+    //     return rej()
+    // }
+    // });
+
+    //  ans
+    // .then (function()
+    // {
+    //     console.log(`Resolved!, number is ${num}`);
+    // })
+    // .catch(function()
+    // {
+    //     console.log(`Rejected!, number[] is ${num}`);
+    // }
+    // );
+
+   async function abcd()
+   {
+         let ans = await fetch ('https://randomuser.me/api/')
+         let result = await ans.json();
+         console.log (result);
+   }  
+   abcd();
+</script>
+</html>

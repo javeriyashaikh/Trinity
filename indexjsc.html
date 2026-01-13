@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    
+    <button onmouseover="fun1()" onmouseout="fun2()"> Click Me </button>
+    <p id="b1"></p>
+ 
+</body>
+
+<script>
+
+function fun1()
+{
+    document.getElementById("b1").innerHTML = Date();
+}
+
+function fun2()
+{
+    document.getElementById("b1").innerHTML = " ";
+}
+
+</script>
+
+
+</html>
